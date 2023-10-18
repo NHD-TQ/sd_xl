@@ -1,5 +1,6 @@
 from par_config import *
 import random
+
 def run():
     version = st.selectbox("Model Version", list(VERSION2SPECS.keys()), 0)
     version_dict = VERSION2SPECS[version]
