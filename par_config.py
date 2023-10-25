@@ -1,6 +1,6 @@
 from pytorch_lightning import seed_everything
 
-from streamlit_helpers import *
+from configs.streamlit_helpers import *
 
 SAVE_PATH = "outputs/demo/txt2img/"
 
@@ -51,15 +51,6 @@ VERSION2SPECS = {
         "is_legacy": False,
         "config": "configs/inference/sd_xl_base.yaml",
         "ckpt": "checkpoints/sd_xl_base_0.9.safetensors",
-    },
-    "SD-2.1": {
-        "H": 512,
-        "W": 512,
-        "C": 4,
-        "f": 8,
-        "is_legacy": True,
-        "config": "configs/inference/sd_2_1.yaml",
-        "ckpt": "checkpoints/v2-1_512-ema-pruned.safetensors",
     },
     "SD-2.1-768": {
         "H": 768,
